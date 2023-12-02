@@ -1,0 +1,104 @@
+.attribution { font-size: 11px; text-align: center; 
+    color: hsl(229, 18%, 17%); }    
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: LexendDeca;
+    src: url('LexendDeca-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: BigShouldersDisplay;
+    src: url('BigShouldersDisplay-VariableFont_wght.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: LexendDeca;
+    gap: 10px;
+}
+h1{
+    font-family: BigShouldersDisplay ;
+}
+p{
+    color: hsl(0, 0%, 100%, 0.75);
+    margin: 0;
+    font-size: 11px;
+    line-height: 18px;
+}
+cont{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+box1, box2, box3{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 150px;
+}
+box1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+box2{
+    background-color: hsl(184, 100%, 22%);
+}
+box3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+bt1, bt2, bt3{
+    background-color: hsl(0, 0%, 95%) ;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+bt1:hover, bt2:hover, bt3:hover{
+    cursor: pointer;
+    background-color: hsla(0, 0%, 100%, 0);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+box11, box22, box33{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+bt1{
+    color:hsl(31, 77%, 52%);
+}
+bt2{
+    color: hsl(184, 100%, 22%);
+}
+bt3{
+    color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 740px) {
+    body{
+        justify-content: flex-start
+    }
+    cont{
+        flex-direction: column;
+    }
+    box1, box3{
+        border-radius: 10px 10px 0 0;
+    }
+    box3{
+        border-radius: 0 0 10px 10px;
+    }
+}
